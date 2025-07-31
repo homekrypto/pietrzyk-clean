@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Łukasz Pietrzyk - Mentoring i Szkolenia</title>
+    <meta name="description" content="Profesjonalne mentoring i szkolenia dla rozwoju osobistego i zawodowego" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZmF2aWNvbkdyYWRpZW50IiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwN0JGRiIgLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMzQ5OERCIiAvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+CjxjaXJjbGUgY3g9IjI0IiBjeT0iMjQiIHI9IjIwIiBmaWxsPSJ1cmwoI2Zhdmljb25HcmFkaWVudCkiIG9wYWNpdHk9IjAuMiIgLz4KPGcgZmlsbD0iIzFhMjAyYyI+CjxwYXRoIGQ9Ik0xMiAxMkwxMiAzMk0xMiAzMkwyMCAzMk0xNiAyMkwxOCAyMCIgc3Ryb2tlPSIjMWEyMDJjIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPgo8cGF0aCBkPSJNMjQgMTJMMjQgMzJNMjQgMTJMMzIgMTJDMzQuMjA5MSAxMiAzNiAxMy43OTA5IDM2IDE2VjE4QzM2IDIwLjIwOTEgMzQuMjA5MSAyMiAzMiAyMkwyNCAyMiIgc3Ryb2tlPSIjMWEyMDJjIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPgo8cGF0aCBkPSJNMzAgMjZMMzYgMjBNMzYgMjBMMzAgMjBNMzYgMjBMMzYgMjYiIHN0cm9rZT0iIzAwN0JGRiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIC8+CjxjaXJjbGUgY3g9IjIwIiBjeT0iMTYiIHI9IjEuNSIgZmlsbD0iIzAwN0JGRiIgLz4KPGNpcmNsZSBjeD0iMjgiIGN5PSIyOCIgcj0iMS41IiBmaWxsPSIjMDA3QkZGIiAvPgo8L2c+Cjwvc3ZnPgo=" />
+    
+    <!-- Dark mode script to prevent flash of light content -->
+    <script>
+      // Ensure dark mode is applied immediately on page load
+      (function() {
+        const storedTheme = localStorage.getItem('theme');
+        // Default to dark mode unless user explicitly chose light mode
+        if (storedTheme !== 'light') {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              accent: {
+                DEFAULT: '#007BFF',
+                dark: '#3498DB',
+              },
+            },
+            animation: {
+              'fade-in': 'fadeIn 1.5s ease-in-out forwards',
+              'fade-in-up': 'fadeInUp 1s ease-out forwards',
+              'marquee': 'marquee 30s linear infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: 0 },
+                '100%': { opacity: 1 },
+              },
+              fadeInUp: {
+                '0%': { opacity: 0, transform: 'translateY(20px)' },
+                '100%': { opacity: 1, transform: 'translateY(0)' },
+              },
+              marquee: {
+                '0%': { transform: 'translateX(0%)' },
+                '100%': { transform: 'translateX(-100%)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-C8wlpXuH.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CpjnApAY.css">
+  </head>
+  <body class="bg-slate-50 dark:bg-gray-900">
+    <div id="root"></div>
+  </body>
+</html>
